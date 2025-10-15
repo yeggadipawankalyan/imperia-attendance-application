@@ -1,0 +1,13 @@
+/* .input-wrapper {
+  width: 100%;
+} */
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #6c757d;
+  pointer-events: none;
+}

@@ -1,0 +1,346 @@
+/* Dashboard.css */
+
+/* page background optional - keep subtle white */
+.dashboard-root {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+}
+
+/* Card surfaces: subtle border, big rounded corners like screenshot */
+.card-surface {
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.03);
+}
+
+/* Top stat tile */
+.top-stats-scroll {
+  padding: 8px 2px;
+}
+.top-stat {
+  min-width: 96px;
+  height: 68px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+}
+.top-stat-value {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0f172a;
+}
+.top-stat-label {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* small info dot used after titles */
+.info-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(99, 102, 241, 0.06);
+  margin-left: 6px;
+}
+
+/* legend colored small dots */
+.legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+/* KPI rows */
+.kpi-row + .kpi-row {
+  border-top: 1px dashed rgba(99, 102, 241, 0.02);
+}
+.kpi-list .kpi-row {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* Detailed KPI rows matching the image */
+.kpi-row-detailed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.kpi-row-detailed:last-child {
+  border-bottom: none;
+}
+
+.kpi-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.kpi-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 2px;
+}
+
+.kpi-town {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 1px;
+}
+
+.kpi-code {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.kpi-center {
+  flex: 0 0 auto;
+  margin: 0 16px;
+}
+
+.kpi-right {
+  flex: 0 0 auto;
+  text-align: right;
+  min-width: 120px;
+}
+
+.kpi-amount-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+
+.kpi-amount {
+  font-weight: 600;
+  font-size: 14px;
+  color: #374151;
+}
+
+.kpi-arrow {
+  color: #10b981;
+  font-size: 12px;
+}
+
+.kpi-allocated {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Mini trend chart */
+.mini-trend-chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-trend-chart svg {
+  display: block;
+}
+
+/* mini bars in right column */
+.mini-bar {
+  height: 8px;
+  border-radius: 6px;
+}
+.bg-pink {
+  background: #fca5a5;
+}
+
+/* Growth Rate Cards */
+.growth-rate-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 12px 8px;
+  text-align: center;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  flex: 1;
+  margin: 0 2px;
+}
+
+.growth-rate-card:not(:last-child) {
+  border-right: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.growth-rate-value {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.growth-rate-label {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/* New Growth Rate Cards with colored lines */
+.growth-rate-card-new {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin: 0 8px;
+  padding: 12px 0;
+}
+
+.growth-rate-line {
+  width: 4px;
+  height: 40px;
+  border-radius: 2px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.growth-rate-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.growth-rate-content .growth-rate-label {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.growth-rate-content .growth-rate-value {
+  font-weight: 700;
+  font-size: 20px;
+  color: #0f172a;
+  margin-bottom: 0;
+}
+
+/* Mini trend charts */
+.mini-chart {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-trend {
+  width: 20px;
+  height: 12px;
+  border-radius: 2px;
+  position: relative;
+}
+
+.trend-up {
+  background: linear-gradient(45deg, #10b981, #34d399);
+}
+
+.trend-down {
+  background: linear-gradient(45deg, #ef4444, #f87171);
+}
+
+.trend-up::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 4px solid #10b981;
+}
+
+.trend-down::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #ef4444;
+}
+
+/* TabSwitcher override (pills like screenshot). 
+   If your TabSwitcher renders simple buttons/links, these styles will apply.
+   If TabSwitcher renders differently, you can update its className props to match.
+*/
+.tab-switcher {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+.tab-switcher .tab-btn {
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  border: 1px solid transparent;
+  background: #fff;
+  color: #6b7280;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+}
+.tab-switcher .tab-btn.active {
+  background: #7f0b14; /* deep red */
+  color: #fff;
+  box-shadow: 0 6px 10px rgba(127, 11, 20, 0.12);
+}
+
+/* make Hover/Focus look nice */
+.tab-switcher .tab-btn:hover {
+  transform: translateY(-1px);
+  transition: all 0.12s ease;
+}
+.top-stat:hover {
+  transform: translateY(-2px);
+  transition: all 0.12s ease;
+}
+/* Gender card tweaks to match screenshot */
+.card-surface {
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.03);
+}
+.info-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(99, 102, 241, 0.06);
+  margin-left: 6px;
+}
+.legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5) inset;
+}
+
+/* Make sure bars look thin and aligned */
+.recharts-wrapper {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .top-stat {
+    min-width: 84px;
+    height: 64px;
+  }
+}

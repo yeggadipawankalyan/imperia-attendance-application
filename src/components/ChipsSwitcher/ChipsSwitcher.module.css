@@ -1,0 +1,32 @@
+.switch {
+  height: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.activeChip {
+  background-color: #800000;
+  color: white;
+}
+
+.inactiveChip {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #d0d5dd;
+}
+
+.switch:hover {
+  opacity: 0.85;
+}

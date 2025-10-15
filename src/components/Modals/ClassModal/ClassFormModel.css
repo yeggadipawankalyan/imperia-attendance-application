@@ -1,0 +1,11 @@
+
+.bb{
+    border-bottom: 1px solid #d0d5dd !important;
+}
+
+.bt {
+    border-top: 1px solid #d0d5dd !important;
+}
+.modal-width {
+    min-width: 40%;
+}

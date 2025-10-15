@@ -1,0 +1,20 @@
+.back-button {
+    color: #800000;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(2, 2, 2, 0.253) !important;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.back-button:hover {
+    color: #800000 !important;
+}
+
+.back-button:focus,
+.back-button:active,
+.back-button:focus-visible {
+  /* outline: none !important; */
+  border: none !important;
+}

@@ -1,0 +1,29 @@
+.modalCard {
+  border-bottom: 1px solid #ccc;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.modalCard:hover {
+  background-color: #f8f9fa;
+}
+
+.icon {
+  color: #800000;
+  font-size: 24px;
+}
+
+.cardTitle {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.cardText {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}

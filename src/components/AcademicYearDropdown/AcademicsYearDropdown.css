@@ -1,0 +1,33 @@
+.custom-dropdown-toggle {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: #800000 !important;
+}
+
+.custom-dropdown-toggle:hover,
+.custom-dropdown-toggle:focus,
+.custom-dropdown-toggle:active {
+  background-color: #800000 !important;
+  box-shadow: none !important;
+}
+
+.dropdown-menu {
+  min-width: 160px;
+  max-height: 250px;
+  overflow-y: auto;
+  border-radius: 0.5rem;
+}
+
+
+.dropdown-item:hover {
+    background-color: #800000;
+    color: white;
+}
+
+.custom-dropdown-menu {
+  min-width: auto !important;
+  width: fit-content; /* or adjust as needed */
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}

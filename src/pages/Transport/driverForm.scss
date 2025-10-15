@@ -1,0 +1,77 @@
+.driverForm{
+    background-color: #F6F6F6;
+
+    h3{
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        padding: 16px 32px;
+        text-transform: capitalize;
+        margin: 0;
+    }
+
+    .driverFormContainer{
+        background: #fff;
+        padding: 32px;
+
+        .personalDetails{
+            h5{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 4px;
+                letter-spacing: 0%;
+                text-transform: capitalize;
+                color: #111827;
+                padding: 8px 0px 6px 0px;
+            }
+
+            p{
+                color: #4B5563;
+                font-weight: 400;
+                font-size: 14px;
+                margin-bottom: 14px;
+                line-height: 20px;
+                text-transform: capitalize;
+                max-width: 200px;
+                width: 200px;
+            }
+            label{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 6px 8px;
+                gap: 10px;
+            }
+            .form-control{
+                background: #FFFFFF;
+                border: 0.8px solid #D0D5DD;
+                box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                border-radius: 8px;
+                padding: 7px 8px;
+                max-width: 100%;
+                min-width: 290px;
+            }
+
+            .custom-date-input {
+                position: relative;
+                display: flex;
+                align-items: center;
+            }
+
+            .custom-date-input input {
+                width: 100%;
+                padding-right: 2.5rem; /* Space for the icon */
+            }
+
+            .calendar-icon {
+                position: absolute;
+                right: 10px;
+                color: #555;
+                pointer-events: none;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}

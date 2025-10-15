@@ -1,0 +1,13 @@
+.search-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 2;
+}

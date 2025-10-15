@@ -1,0 +1,15 @@
+.card {
+  font-size: 16px;
+}
+
+.status-text {
+  font-weight: 500;
+}
+
+.assigned {
+  color: #00c49a; /* greenish */
+}
+
+.not-assigned {
+  color: #ff4d4f; /* red */
+}

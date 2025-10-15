@@ -1,0 +1,43 @@
+.payment-row {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  margin: 4px 0px;
+  gap: 4px;
+
+  .left-row, .right-row {
+    padding: 0 12px;
+  }
+  .label {
+    font-size: 14px;
+    color:#70707A;
+    font-weight: 400;
+  }
+
+  .value {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 2px;
+    color:#0A112F;
+
+    span {
+      font-size: 24px;
+      color: #9096A2;
+      font-weight: 400;
+    }
+  }
+
+  .change {
+    font-size: 14px;
+    color: #10b981;
+    align-self: flex-end;
+    padding: 7.7px ;
+    background-color: #00CC991A;
+    font-weight: 400;
+    span{
+      color: #9CA3AF;
+      background-color: none;
+    }
+  }
+}

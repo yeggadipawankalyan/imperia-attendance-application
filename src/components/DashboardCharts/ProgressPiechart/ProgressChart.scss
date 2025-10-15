@@ -1,0 +1,19 @@
+.progress-chart {
+  position: relative;
+  width: 140px;
+  height: 140px;
+
+  .center-text {
+    position: absolute;
+    top: 70%;
+    right: -40%;
+    transform: translate(10%, -150%);
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 50px;
+    text-align: center;
+  }
+}

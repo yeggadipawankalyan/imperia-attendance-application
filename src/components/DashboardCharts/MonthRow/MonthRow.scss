@@ -1,0 +1,61 @@
+.month-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #E4E4E7;
+  border-radius: 16px;
+  padding: 16px;
+
+
+  .label {
+    font-weight: 400;
+    font-size: 16px;
+    color: #9CA3AF;
+    margin: 0;
+    width: 250px;
+  }
+
+  .date {
+    font-size: 14px;
+    color: #9CA3AF;
+    margin: 2px 0;
+    font-weight: 400;
+  }
+
+  .amount {
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 140%;
+    width: 290px;
+
+    span{
+      font-family: Inter;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 16px;
+      line-height: 140%;
+      color: #9CA3AF;
+    }
+  }
+
+  .status {
+    opacity: 1;
+    padding: 2px 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.paid {
+      border: 1px solid #00CC99;
+      background: #ecfdf5;
+      color: #00CC99;
+    }
+
+    &.unpaid {
+      border: 1px solid #EB5757;
+      background: #fef2f2;
+      color: #EB5757;
+    }
+  }
+}

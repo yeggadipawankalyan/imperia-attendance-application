@@ -1,0 +1,32 @@
+.tab-btn {
+  background-color: transparent;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  position: relative;
+  -webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
+  -moz-transition: color 0.2s ease, border-bottom 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom 0.2s ease;
+  -o-transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+/* .btn {
+  font-size: 16px;
+  font-weight: bold;
+} */
+
+.tab-btn:hover {
+  color: #800000; /* Change to your desired hover color */
+}
+
+.tab-active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #800000;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}

@@ -1,0 +1,45 @@
+.tab-switcher-container {
+  width: fit-content;
+  height: 40px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(2, 2, 2, 0.253);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.switch{
+  min-width: 150px;
+  height: 32px;
+  background: transparent;
+  font-weight: 500;
+}
+
+.active-tab {
+  background-color: #800000;
+  color: white;
+  /* border: 1px solid #800000; */
+}
+
+.inactive-tab {
+  color: #000000;
+}
+
+/* 🚫 Disable hover effects */
+/* .active-tab:hover,
+.inactive-tab:hover {
+  background-color: #800000;
+  color: white;
+  border: 1px solid #800000;
+  box-shadow: none !important;
+} */
+
+/* Inactive tab hover fix */
+/* .inactive-tab:hover {
+  background-color: white;
+  color: #800000;
+  border: 1px solid #800000;
+} */
+
